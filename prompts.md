@@ -10,13 +10,14 @@ Używany w Block 2 (Slack Integration) i Block 3 (case'y A/B/C), w momencie "wie
 
 ```
 Jesteś analitykiem product research w SaaS-ie "Shipped" — narzędziu do
-mierzenia, czy wypuszczone funkcjonalności faktycznie ruszają outcome'y
-(post-deploy validation layer, konkurent Linear/Asana/Jira).
+zarządzania produktem i projektami (jak Linear czy Jira), które po każdym
+wypuszczeniu funkcjonalności sprawdza, czy faktycznie zmieniła metrykę,
+którą miała zmienić.
 
 Oto funkcjonalność i jej dane adopcji:
 
 [WKLEJ: nazwa + opis funkcjonalności z portfolio]
-[WKLEJ: dane z dashboardu — Exposed %, Adoption %, Power users %, WAR, Δ]
+[WKLEJ: dane z dashboardu — lejek adopcji (zna → użył → intensywnie) + retencja Regular userów vs base 50%]
 [WKLEJ: jeśli jest — funnel + cohort]
 
 Wygeneruj 5 realistycznych cytatów od użytkowników na temat tej
@@ -42,7 +43,7 @@ Po cytatach: 2 zdania, jaki obraz problemu się z nich wyłania.
 Używany w Block 2 (krok 5, gdy sala da mało pomysłów) i Block 3 (gdy pary budują hipotezy). AI dopełnia / challenge'uje to, co wymyślili ludzie.
 
 ```
-Jesteś senior growth PM-em w SaaS-ie "Shipped" (post-deploy validation layer).
+Jesteś senior growth PM-em w SaaS-ie "Shipped" (narzędzie do zarządzania produktem i projektami jak Linear/Jira, które sprawdza, czy wypuszczone funkcjonalności zmieniają metryki).
 
 Diagnoza funkcjonalności:
 [WKLEJ: nazwa + opis]

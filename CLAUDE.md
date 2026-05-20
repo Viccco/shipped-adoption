@@ -25,10 +25,12 @@ Te konwencje obowiązują, nawet jeśli prompt jest krótki (np. "co robi firma 
 
 ## Model metryk (jak liczyć — obowiązuje wszędzie)
 
+**Segmenty userów** (jedno nazewnictwo wszędzie — nie wymyślaj synonimów): per funkcjonalność dzielimy userów na **Non-user** (nigdy nie użył), **Casual user** (użył, nie regularnie), **Regular user** (używa regularnie). Konkret per funkcjonalność podawaj w nawiasie, np. "Regular user (linkuje event intensywnie)".
+
 Per funkcjonalność **dwie rzeczy**, nic więcej:
 
-1. **Lejek adopcji** — zna % → użył % → używa intensywnie %. Pokazuje, gdzie userzy odpadają (np. tknął raz i nie wraca — materiał do dyskusji).
-2. **Sygnał wartości** — retencja userów, którzy **intensywnie** używają funkcjonalności, vs retencja **całego aktywnego user base** (50%). Różnica = **sygnał** (korelacja), nie dowód impactu. Dowód dałby dopiero aggressive test.
+1. **Lejek adopcji** — zna % → użył % → intensywnie % (Regular user). Pokazuje, gdzie userzy odpadają (np. tknął raz i nie wraca — materiał do dyskusji).
+2. **Sygnał wartości** — retencja **Regular userów** vs retencja **całego aktywnego user base** (50%). Różnica = **sygnał** (korelacja), nie dowód impactu. Dowód dałby dopiero aggressive test.
 
 **Zakazane** (konceptualnie słabe): "Power user WAR", porównania do arbitralnego "baseline", podawanie korelacji jako impactu, mnożenie metryk (Exposed/Adoption/Power users jako osobne kolumny — to jeden lejek). Zawsze "vs cały aktywny base", zawsze nazywaj różnicę sygnałem.
 

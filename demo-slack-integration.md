@@ -28,14 +28,14 @@ Pierwsze trzy kroki wysokie — konfiguracja i odbiór działają. Dramatyczny s
 
 Retencja (weekly active rate) wg intensywności użycia, ostatnie 90 dni:
 
-| Grupa | Liczba paying users | Retencja (weekly active) |
+| Segment | Liczba paying users | Retencja (weekly active) |
 |---|---|---|
 | Cały aktywny user base | — | 50% |
-| Nie skonfigurował Slack Integration | 1,137 (22%) | 50% |
-| Skonfigurował, czyta pasywnie (nie klika) | 3,413 (66%) | 50% |
-| Aktywnie klika i wraca przez Slack | 620 (12%) | **52%** |
+| Non-user (nie skonfigurował Slack Integration) | 1,137 (22%) | 50% |
+| Casual user (skonfigurował, czyta pasywnie, nie klika) | 3,413 (66%) | 50% |
+| Regular user (aktywnie klika i wraca przez Slack) | 620 (12%) | **52%** |
 
-**Tu jest pointa:** nawet grupa, która aktywnie klika, ma retencję **52% vs 50% całego aktywnego base = +2pp**. Sygnał prawie zerowy. Ci, którzy tylko czytają (66% paying users), są dokładnie na poziomie base. Powiadomienia nie ruszają retencji — bo są pasywne. Dostać info ≠ wrócić i coś zrobić.
+**Tu jest pointa:** nawet Regular userzy (aktywnie klikają) mają retencję **52% vs 50% całego aktywnego base = +2pp**. Sygnał prawie zerowy. Casual userzy (66% paying users, tylko czytają) są dokładnie na poziomie base. Powiadomienia nie ruszają retencji — bo są pasywne. Dostać info ≠ wrócić i coś zrobić.
 
 ## Cytaty userów
 
@@ -60,7 +60,7 @@ Retencja (weekly active rate) wg intensywności użycia, ostatnie 90 dni:
 2. **Rola** — push z powrotem do produktu, outcome = retention. Skoro 78% używa, a ma napędzać retention — warto sprawdzić, czy faktycznie napędza.
 3. **Value** — TO problem. +2pp nawet u aktywnych. Push-only, pasywne. Linear pokazuje, że two-way (actionable) działa — to sufit naszej implementacji, nie funkcjonalności.
 4. **Decyzja** — fix (pogłębić do actionable), nie kill.
-5. **Hipoteza** — actionable Slack: akceptuj/odrzuć task, raport inline w wątku, zapytaj o outcome bez wchodzenia do Shipped. Aggressive test: two-way dla części teamów, mierzymy czy WAR rośnie powyżej +2pp.
+5. **Hipoteza** — actionable Slack: akceptuj/odrzuć task, raport inline w wątku, zapytaj o outcome bez wchodzenia do Shipped. Aggressive test: two-way dla części teamów, mierzymy czy retencja Regular userów rośnie powyżej +2pp.
 
 ---
 

@@ -1,6 +1,6 @@
 # Shipped — dane adopcji i retencji (szczegółowe)
 
-Dwa zestawy danych pod charty: adoption rate over time (trend tygodniowy) i retencja per segment (dla każdej funkcjonalności). Spójne z `data-dashboard.md` — power-user endpoint w tabeli retencji = Power user WAR z dashboardu.
+Dwa zestawy danych pod charty: adoption rate over time (trend tygodniowy) i retencja per segment (dla każdej funkcjonalności). Spójne z `data-dashboard.md`.
 
 ## 1. Adoption rate over time (WAU % per funkcjonalność)
 
@@ -22,9 +22,9 @@ WAU % = jaki % MAU był aktywny w danej funkcjonalności w danym tygodniu. Ostat
 
 ## 2. Retencja per segment (weekly active rate)
 
-Dla każdej funkcjonalności: weekly active rate (w całym Shipped) trzech segmentów — kto jej nie używa, kto używa średnio, kto regularnie (power user). Baseline = 50%. Power-user endpoint zgadza się z Power user WAR z dashboardu. Pod wykres retention-by-segment (bar lub curve).
+Dla każdej funkcjonalności: weekly active rate (w całym Shipped) trzech segmentów — Non-user (nie używa), Casual user (używa średnio), Regular user (używa regularnie). Baseline = 50%. Pod wykres retention-by-segment (bar lub curve).
 
-Punkt odniesienia: **cały aktywny user base = 50%**. Sygnał wartości = retencja intensywnych userów − 50%.
+Punkt odniesienia: **cały aktywny user base = 50%**. Sygnał wartości = retencja Regular userów − 50%.
 
 | Funkcjonalność | Non-user | Casual user | Regular user | Change (Regular vs base 50%) |
 | --- | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ Punkt odniesienia: **cały aktywny user base = 50%**. Sygnał wartości = retenc
 | Slack Integration | 50 | 50 | 52 | +2 |
 | MCP Server (UI-based) | 50 | 47 | 31 | −19 |
 
-**Czytanie:** mocny sygnał (AI Daily Brief +25, Outcome Roadmap +20) = intensywni userzy zostają dużo bardziej niż base, ale w wąskiej grupie. Płasko (Slack +2) = funkcjonalność nie napędza retencji. Ujemnie (MCP −19) = paradoks: intensywni userzy MCP żyją w Claude, nie w UI — spadek w UI to dowód, że mierzymy nie tam, gdzie trzeba. **Wszystko to sygnał (korelacja), nie dowód impactu** — intensywni userzy mogli być inni od początku.
+**Czytanie:** mocny sygnał (AI Daily Brief +25, Outcome Roadmap +20) = Regular userzy zostają dużo bardziej niż base, ale w wąskiej grupie. Płasko (Slack +2) = funkcjonalność nie napędza retencji. Ujemnie (MCP −19) = paradoks: Regular userzy MCP żyją w Claude, nie w UI — spadek w UI to dowód, że mierzymy nie tam, gdzie trzeba. **Wszystko to sygnał (korelacja), nie dowód impactu** — Regular userzy mogli być inni od początku.
 
 ## Uwaga dla generowania chartów
 

@@ -4,7 +4,7 @@ To są materiały do **warsztatu o adopcji funkcjonalności**. Ten folder zawier
 
 ## Czym jest Shipped
 
-Fikcyjne narzędzie do zarządzania produktem — "post-deploy validation layer." Linear/Asana/Jira kończą się przy deployu; Shipped tam się zaczyna: po wypuszczeniu funkcjonalności mówi ci, czy faktycznie ruszyła outcome, który miała ruszyć. Integruje się z PostHog/Mixpanel/Amplitude i hurtowniami danych. Pełny kontekst: `company.md`.
+Fikcyjne narzędzie do zarządzania produktem i projektami — jak Linear czy Jira — z jedną różnicą: nie kończy się na "Done." Po wypuszczeniu funkcjonalności sprawdza, czy faktycznie zmieniła metrykę, którą miała zmienić. Integruje się z PostHog/Mixpanel/Amplitude i hurtowniami danych. Pełny kontekst: `company.md`.
 
 ## Flow, którego uczy warsztat
 

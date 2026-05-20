@@ -28,14 +28,14 @@ Funnel mierzony na poziomie usera — decyzja "linkuj event" jest podejmowana pr
 
 Retencja (weekly active rate) wg intensywności użycia, ostatnie 90 dni:
 
-| Grupa | Retencja (weekly active) |
+| Segment | Retencja (weekly active) |
 |---|---|
 | Cały aktywny user base | 50% |
-| Nigdy nie zlinkował eventu | 47% |
-| Zlinkował event do 1–5 tasków | 56% |
-| Linkuje event intensywnie | **68%** |
+| Non-user (nigdy nie zlinkował eventu) | 47% |
+| Casual user (zlinkował 1–5 tasków) | 56% |
+| Regular user (linkuje intensywnie) | **68%** |
 
-**Sygnał wartości:** userzy, którzy linkują eventy intensywnie, mają retencję **68% vs 50% całego aktywnego base = +18pp**. To **sygnał** (korelacja), nie dowód — ci userzy mogli być bardziej zaangażowani od początku (różnica utrzymuje się po kontroli na rozmiar zespołu i staż, ale to wciąż obserwacja, nie eksperyment). Dowód dałby dopiero aggressive test.
+**Sygnał wartości:** Regular userzy (linkują eventy intensywnie) mają retencję **68% vs 50% całego aktywnego base = +18pp**. To **sygnał** (korelacja), nie dowód — ci userzy mogli być bardziej zaangażowani od początku (różnica utrzymuje się po kontroli na rozmiar zespołu i staż, ale to wciąż obserwacja, nie eksperyment). Dowód dałby dopiero aggressive test.
 
 ## Cytaty userów
 

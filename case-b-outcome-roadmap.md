@@ -24,14 +24,14 @@ Outcome który miał ruszyć: **weekly active users** (cycle outcome Shipped na 
 
 Retencja (weekly active rate) wg intensywności użycia, ostatnie 90 dni:
 
-| Grupa | Liczba paying users | Retencja (weekly active) |
+| Segment | Liczba paying users | Retencja (weekly active) |
 |---|---|---|
 | Cały aktywny user base | — | 50% |
-| Nigdy nie otworzył Outcome Roadmap | 2,070 (40%) | 45% |
-| Otworzył, ale nie zlinkował tasku do goala | 2,480 (48%) | 52% |
-| Zlinkował task do goala i używa intensywnie | 620 (12%) | **70%** |
+| Non-user (nigdy nie otworzył Outcome Roadmap) | 2,070 (40%) | 45% |
+| Casual user (otworzył, nie zlinkował tasku do goala) | 2,480 (48%) | 52% |
+| Regular user (zlinkował task do goala, używa intensywnie) | 620 (12%) | **70%** |
 
-**Sygnał wartości:** userzy, którzy intensywnie używają (zlinkowali task do goala), mają retencję **70% vs 50% całego aktywnego base = +20pp**. Próg jest w momencie linkowania taska — samo otwarcie widoku nie wystarcza. To sygnał (korelacja), nie dowód — dowód dałby aggressive test.
+**Sygnał wartości:** Regular userzy (zlinkowali task do goala, używają intensywnie) mają retencję **70% vs 50% całego aktywnego base = +20pp**. Próg jest w momencie linkowania taska — samo otwarcie widoku nie wystarcza. To sygnał (korelacja), nie dowód — dowód dałby aggressive test.
 
 ## Cytaty userów
 

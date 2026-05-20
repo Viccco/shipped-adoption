@@ -30,14 +30,14 @@ Outcome który miał ruszyć: **weekly active users** (cycle outcome Retain). Al
 
 Retencja (weekly active rate, mierzona w UI) wg intensywności użycia:
 
-| Grupa | Liczba paying users | Retencja (weekly active w UI) |
+| Segment | Liczba paying users | Retencja (weekly active w UI) |
 |---|---|---|
 | Cały aktywny user base | — | 50% |
-| Nie używa MCP Server | 4,880 (94%) | 50% |
-| Skonfigurował, ale nie używa intensywnie | 195 (4%) | 47% |
-| Używa MCP intensywnie | 95 (2%) | **31%** |
+| Non-user (nie używa MCP Server) | 4,880 (94%) | 50% |
+| Casual user (skonfigurował, nie używa intensywnie) | 195 (4%) | 47% |
+| Regular user (używa MCP intensywnie) | 95 (2%) | **31%** |
 
-**Tu jest paradoks:** intensywni userzy MCP mają retencję **31% vs 50% całego aktywnego base = −19pp** — wyglądają, jakby porzucali produkt. Ale **konsumują Shipped 7 razy w tygodniu, tylko przez Claude, nie przez UI.** Metryka mierzona w UI nie łapie tego użycia, więc sukces MCP w tej grupie jest niewidoczny. To nie jest sygnał słabej wartości — to sygnał, że **mierzymy nie tam, gdzie trzeba.** Dla MCP potrzeba metryki liczącej wywołania przez agentów, nie aktywność w UI.
+**Tu jest paradoks:** Regular userzy MCP mają retencję **31% vs 50% całego aktywnego base = −19pp** — wyglądają, jakby porzucali produkt. Ale **konsumują Shipped 7 razy w tygodniu, tylko przez Claude, nie przez UI.** Metryka mierzona w UI nie łapie tego użycia, więc sukces MCP w tej grupie jest niewidoczny. To nie jest sygnał słabej wartości — to sygnał, że **mierzymy nie tam, gdzie trzeba.** Dla MCP potrzeba metryki liczącej wywołania przez agentów, nie aktywność w UI.
 
 ## Cytaty userów
 
