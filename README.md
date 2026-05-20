@@ -1,10 +1,10 @@
 # Shipped — case study na warsztat "Feature Adoption"
 
-To są materiały do **warsztatu o adopcji funkcjonalności** (Product Pro Summit). Plan całego warsztatu jest piętro wyżej: `../Adoption.md`. Ten folder zawiera fikcyjną firmę **Shipped**, na której uczestnicy ćwiczą flow diagnozy adopcji.
+To są materiały do **warsztatu o adopcji funkcjonalności**. Ten folder zawiera fikcyjną firmę **Shipped**, na której uczestnicy ćwiczą flow diagnozy adopcji.
 
 ## Czym jest Shipped
 
-Fikcyjne narzędzie PM — "post-deploy validation layer." Linear/Asana/Jira kończą się przy deployu; Shipped tam się zaczyna: po wypuszczeniu funkcjonalności mówi ci, czy faktycznie ruszyła outcome, który miała ruszyć. Integruje się z PostHog/Mixpanel/Amplitude i hurtowniami danych. Pełny kontekst: `company.md`.
+Fikcyjne narzędzie do zarządzania produktem — "post-deploy validation layer." Linear/Asana/Jira kończą się przy deployu; Shipped tam się zaczyna: po wypuszczeniu funkcjonalności mówi ci, czy faktycznie ruszyła outcome, który miała ruszyć. Integruje się z PostHog/Mixpanel/Amplitude i hurtowniami danych. Pełny kontekst: `company.md`.
 
 **Skala (potrzebna do czytania danych):** ~5,170 paying users, baseline weekly active rate **50%**, cycle outcome = **Retain** (weekly active users).
 
