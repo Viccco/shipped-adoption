@@ -16,29 +16,33 @@ Widok one-page wszystkich funkcjonalności Shipped z baseline'em firmy. Punkt st
 
 ## Per feature — high-level scan
 
-Cycle outcome = **Retain** (weekly active users). Wszystkie metryki względem paying users.
+Cycle outcome = **Retain** (weekly active users). Dwie rzeczy per funkcjonalność: **lejek adopcji** (gdzie userzy odpadają) i **sygnał wartości** (czy intensywni userzy mają lepszą retencję niż cały aktywny base 50%).
 
-| Feature | Exposed % | Adoption % | Power users % | Power user WAR | Δ vs baseline | Notatka |
-|---|---|---|---|---|---|---|
-| Goals & Outcomes | 95% | 88% | 71% | 67% | **+17pp** | Core. Sercem onboardingu. |
-| Post-Ship Impact Detector | 92% | 81% | 65% | 70% | **+20pp** | Core. Sercem produktu. |
-| Outcome Roadmap | 60% | 18% | 5% | 70% | **+20pp** | Wysoki Power user WAR, ale tylko 5% paying users — sprawdź czemu większość nie dochodzi. |
-| Task-to-Event Linking | 35% | 23% | 8% | 68% | **+18pp** | Wysoki impact dla powerów, niska distribution. Klasyczny low-hanging fruit. |
-| AI Daily Brief | 18% | 9% | 3% | 75% | **+25pp** | Najwyższy impact w portfolio. Prawie nikt nie wie że istnieje. |
-| MCP Server | 62% | 6% | 2% | 31% | **−19pp** | Negatywny Δ. Sprawdź czy klasyczna metryka tu pasuje. |
-| Analytics Integrations | 85% | 78% | 62% | 58% | +8pp | Foundation. Niezbędne, ale impact skromny. |
-| Data Warehouse Integration | 22% | 18% | 12% | 63% | +13pp | Nowy segment (Enterprise). Niska penetracja, strategiczne dla pipeline. |
-| Slack Integration | 88% | 78% | 71% | 52% | +2pp | Wszyscy używają, prawie zero impactu. Czy to warte utrzymania? |
+| Feature | Lejek: zna → użył → intensywnie | Retencja intensywnych vs base (50%) | Notatka |
+|---|---|---|---|
+| Goals & Outcomes | 95% → 88% → 71% | 67% (**+17pp**) | Core. Sercem onboardingu. |
+| Post-Ship Impact Detector | 92% → 81% → 65% | 70% (**+20pp**) | Core. Sercem produktu. |
+| Outcome Roadmap | 60% → 18% → 5% | 70% (**+20pp**) | Mocny sygnał, ale tylko 5% dochodzi do intensywnego użycia — sprawdź, czemu większość odpada. |
+| Task-to-Event Linking | 35% → 23% → 8% | 68% (**+18pp**) | Mocny sygnał wartości, niski zasięg. Klasyczny low-hanging fruit. |
+| AI Daily Brief | 18% → 9% → 3% | 75% (**+25pp**) | Najmocniejszy sygnał w portfolio. Prawie nikt nie wie, że istnieje. |
+| MCP Server | 62% → 6% → 2% | 31% (**−19pp**, UI) | Ujemnie — ale intensywni userzy żyją w Claude, nie w UI. Klasyczna metryka tu nie pasuje. |
+| Analytics Integrations | 85% → 78% → 62% | 58% (+8pp) | Foundation. Niezbędne, ale słaby sygnał wartości. |
+| Data Warehouse Integration | 22% → 18% → 12% | 63% (+13pp) | Nowy segment (Enterprise). Niska penetracja, strategiczne dla pipeline. |
+| Slack Integration | 88% → 78% → 71% | 52% (+2pp) | Wszyscy używają, sygnał prawie zerowy. Czy to warte utrzymania? |
 
 ## Jak czytać tabelę
 
-- **Exposed %** — paying users, którzy wiedzą, że feature istnieje (zobaczyli changelog / mail / docs).
-- **Adoption %** — paying users, którzy użyli ≥1 raz.
-- **Power users %** — paying users, którzy używają regularnie (definicja zależy od feature: dla Goals — używa weekly, dla Task-to-Event — linkuje większość tasków, dla MCP — ≥3 calls/tydzień).
-- **Power user WAR** — Weekly active rate dla tej najwęższej grupy. *Klasyczna* metryka (UI-based). Dla MCP Server nie pasuje.
-- **Δ vs baseline** — różnica vs 50% baseline (Power user WAR − 50%). Im wyższy, tym mocniejszy sygnał wartości feature dla użytkowników.
+**Lejek adopcji** (zna → użył → intensywnie) — gdzie userzy odpadają:
+- **zna** — paying users, którzy wiedzą, że funkcjonalność istnieje
+- **użył** — kiedykolwiek użyli ≥1 raz
+- **intensywnie** — używają regularnie (próg zależy od funkcjonalności; w deep-dive'ie case'a jest podany wprost)
 
-**Uwaga o liczeniu Δ:** dashboard liczy Δ vs baseline 50%. W deep-dive'ach case'ów (A/B/C, Slack) różnice są liczone vs grupa, która **nigdy nie używała** feature — więc liczby mogą się różnić o kilka pp (np. Task-to-Event: dashboard +18pp = 68−50, case +21pp = 68−47). To ta sama historia, inna baza odniesienia. Dashboard = "jak wypada vs typowy paying user"; case = "jak wypada vs ktoś, kto tego nie tknął".
+Duży spadek "zna → użył" = problem z wejściem (discoverability). Duży spadek "użył → intensywnie" = tknęli raz i nie wrócili (sygnał, że coś nie trzyma).
+
+**Retencja intensywnych vs base** — sygnał wartości:
+- Bierzemy userów, którzy używają funkcjonalności intensywnie, i sprawdzamy ich retencję (weekly active) vs **cały aktywny user base (50%)**.
+- Dodatnia różnica = sygnał, że intensywne używanie wiąże się z lepszą retencją. **To korelacja, nie dowód** (intensywni userzy mogli być inni od początku). Dowód dałby aggressive test.
+- Slack +2pp = sygnał prawie zerowy. AI Daily Brief +25pp = mocny sygnał, ale w wąskiej grupie. MCP −19pp = paradoks (mierzone w UI, a oni żyją w Claude).
 
 ## Co prowadzący ma w zanadrzu (data slices)
 
@@ -72,7 +76,7 @@ Uczestnik może rzucić dowolne pytanie. Prowadzący dla A/B/C ma pre-przygotowa
 ## Mechanika dla uczestnika
 
 1. **Spójrz na tabelę.** 2 minuty same dane.
-2. **Wybierz feature do diagnozy.** Co cię uderza? Wysokie Δ + niska Coverage = warto sprawdzić. Negatywne Δ = jeszcze ciekawiej.
+2. **Wybierz feature do diagnozy.** Co cię uderza? Mocny sygnał wartości + niski zasięg w lejku = warto sprawdzić. Ujemny sygnał = jeszcze ciekawiej.
 3. **Rzuć pytanie prowadzącemu:** "Pull X data for feature Y."
 4. **Diagnozuj.** Z danymi w ręku, jakie problemy widzisz? Discoverability? Value? Coś jeszcze?
 5. **Zbuduj hipotezę.** Co byś z tym zrobił w następnych 4 tygodniach?

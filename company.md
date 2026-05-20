@@ -2,21 +2,15 @@
 
 ## Pozycjonowanie
 
-> **Linear, Asana i Jira kończą się przy wypuszczeniu funkcjonalności. Shipped tam dopiero się zaczyna.**
->
-> Każda wypuszczona funkcjonalność dostaje automatyczny raport po 14 dniach: kto z niej skorzystał, jak zmieniła się metryka, którą miała ruszyć, jak wypada grupa, która użyła, przeciw grupie, która nie użyła. Bez klikania, bez SQL, bez czekania na analityka.
->
-> AI samo czyta dane z twojego PostHoga / Mixpanela / Amplitude (albo z hurtowni danych) i pisze prostym językiem: ta funkcjonalność działa, ta nie, ta zjada inną.
+**Shipped to narzędzie do zarządzania produktem i projektami — jak Linear czy Jira — z jedną różnicą: nie kończy się na „Done".** Po każdym wypuszczeniu funkcjonalności automatycznie sprawdza, czy faktycznie zmieniła metrykę, którą miała zmienić (retencję, konwersję, aktywność), i raportuje to bez analityka, bez SQL-a, bez ręcznego budowania dashboardów.
 
-Linear, Asana i Jira pomagają zarządzać pracą zanim coś wypuścicie. PostHog i Mixpanel mają dane po tym jak wypuścicie, ale musicie tam wejść sami i policzyć. Shipped wypełnia dziurę pomiędzy.
+Integruje się z PostHog, Mixpanel, Amplitude, Heap, Segment oraz hurtowniami danych (Snowflake, BigQuery, Redshift, Databricks).
 
 ## Mechanika
 
-- **Integracja z analityką jest wbudowana**, nie dodatek. Z pudełka działa z PostHogiem, Mixpanelem, Amplitude, Heapem i Segmentem.
-- **Hurtownia danych** (Snowflake, BigQuery, Redshift, Databricks) jako równoważna droga — dla firm, które trzymają swoje dane poza narzędziami SaaS-owymi.
-- Kiedy spec'ujesz funkcjonalność, wybierasz jedną metryę, którą ma ruszyć (np. "konwersja z trial do paid", "weekly active teams", "tickety na agenta"). Jedno pole, nie cała ankieta.
-- Po wypuszczeniu AI samo wybiera kogo śledzić, dobiera grupę kontrolną i po 14 dniach generuje raport. Bez pisania SQL-a, bez konfigurowania cohortów.
-- Cała zawartość dostępna przez MCP server — Claude, Cursor i inne asystenty AI mogą pytać o status celów, sprawdzać które funkcjonalności działają, sprawdzać czy któraś zjada inną — bez otwierania interfejsu Shipped.
+- Kiedy spec'ujesz funkcjonalność, wybierasz jedną metryę, którą ma ruszyć (np. "konwersja z trial do paid", "weekly active teams"). Jedno pole, nie cała ankieta.
+- Po wypuszczeniu AI samo dobiera kogo śledzić i grupę kontrolną, po 14 dniach generuje raport.
+- Wszystko dostępne przez MCP server — Claude, Cursor i agenty pytają o status celów i które funkcjonalności działają, bez otwierania UI Shipped.
 
 ## Segment
 

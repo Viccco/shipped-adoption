@@ -22,15 +22,16 @@ Outcome który miał ruszyć: **weekly active users** (cycle outcome Shipped na 
 
 ## Cohort/Outcome
 
-Porównanie weekly active rate dla paying users, ostatnie 90 dni:
+Retencja (weekly active rate) wg intensywności użycia, ostatnie 90 dni:
 
-| Grupa | Liczba paying users | Weekly active rate |
+| Grupa | Liczba paying users | Retencja (weekly active) |
 |---|---|---|
+| Cały aktywny user base | — | 50% |
 | Nigdy nie otworzył Outcome Roadmap | 2,070 (40%) | 45% |
 | Otworzył, ale nie zlinkował tasku do goala | 2,480 (48%) | 52% |
-| Zlinkował task do goala i używa | 620 (12%) | **70%** |
+| Zlinkował task do goala i używa intensywnie | 620 (12%) | **70%** |
 
-Różnica: **+25pp** między grupą, która zlinkowała task do goala, a grupą, która nigdy nie otworzyła widoku. Próg wartości jest w momencie linkowania taska — samo otwarcie widoku nie wystarcza, żeby user wyciągnął z funkcjonalności realną wartość.
+**Sygnał wartości:** userzy, którzy intensywnie używają (zlinkowali task do goala), mają retencję **70% vs 50% całego aktywnego base = +20pp**. Próg jest w momencie linkowania taska — samo otwarcie widoku nie wystarcza. To sygnał (korelacja), nie dowód — dowód dałby aggressive test.
 
 ## Cytaty userów
 

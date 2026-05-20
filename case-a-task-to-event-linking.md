@@ -26,15 +26,16 @@ Funnel mierzony na poziomie usera — decyzja "linkuj event" jest podejmowana pr
 
 ## Cohort/Outcome
 
-Porównanie weekly active rate dla paying users, ostatnie 90 dni:
+Retencja (weekly active rate) wg intensywności użycia, ostatnie 90 dni:
 
-| Grupa | Weekly active rate (user-level) |
+| Grupa | Retencja (weekly active) |
 |---|---|
+| Cały aktywny user base | 50% |
 | Nigdy nie zlinkował eventu | 47% |
 | Zlinkował event do 1–5 tasków | 56% |
-| Linkuje event do większości tasków | **68%** |
+| Linkuje event intensywnie | **68%** |
 
-Różnica: **+21pp** weekly active rate między userami, którzy linkują regularnie, a userami, którzy nigdy nie linkowali. Korelacja utrzymuje się po kontrolowaniu na rozmiar zespołu, w którym user pracuje, i jego staż w produkcie. Cycle outcome firmy (weekly active teams) jest agregacją user-level retention.
+**Sygnał wartości:** userzy, którzy linkują eventy intensywnie, mają retencję **68% vs 50% całego aktywnego base = +18pp**. To **sygnał** (korelacja), nie dowód — ci userzy mogli być bardziej zaangażowani od początku (różnica utrzymuje się po kontroli na rozmiar zespołu i staż, ale to wciąż obserwacja, nie eksperyment). Dowód dałby dopiero aggressive test.
 
 ## Cytaty userów
 

@@ -26,15 +26,16 @@ Pierwsze trzy kroki wysokie — konfiguracja i odbiór działają. Dramatyczny s
 
 ## Cohort/Outcome
 
-Weekly active rate dla paying users, ostatnie 90 dni:
+Retencja (weekly active rate) wg intensywności użycia, ostatnie 90 dni:
 
-| Grupa | Liczba paying users | Weekly active rate |
+| Grupa | Liczba paying users | Retencja (weekly active) |
 |---|---|---|
+| Cały aktywny user base | — | 50% |
 | Nie skonfigurował Slack Integration | 1,137 (22%) | 50% |
 | Skonfigurował, czyta pasywnie (nie klika) | 3,413 (66%) | 50% |
 | Aktywnie klika i wraca przez Slack | 620 (12%) | **52%** |
 
-**Tu jest pointa:** nawet grupa, która aktywnie klika w powiadomienia, ma tylko +2pp nad baseline. A ci, którzy tylko czytają (66% paying users), są dokładnie na baseline. Powiadomienia nie ruszają retention — bo są pasywne. Dostać info ≠ wrócić i coś zrobić.
+**Tu jest pointa:** nawet grupa, która aktywnie klika, ma retencję **52% vs 50% całego aktywnego base = +2pp**. Sygnał prawie zerowy. Ci, którzy tylko czytają (66% paying users), są dokładnie na poziomie base. Powiadomienia nie ruszają retencji — bo są pasywne. Dostać info ≠ wrócić i coś zrobić.
 
 ## Cytaty userów
 

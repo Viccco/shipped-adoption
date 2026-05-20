@@ -71,3 +71,24 @@ typu "popraw UX" czy "lepsza komunikacja".
 
 - **Block 2:** Wiktor odpala Prompt 1 na żywo na Slack Integration ("zobaczcie, jak w 30 sekund wyciągam głos klienta"). Potem Prompt 2, porównuje z pomysłami sali.
 - **Block 3:** pary mogą użyć obu promptów na swoim case'ie — ale dopiero PO tym, jak same postawią diagnozę i pierwsze hipotezy. AI dopełnia, nie zastępuje myślenia. To jest lekcja: AI to surowy materiał, craft (ocena czy hipoteza trzyma się danych i strategii) jest człowieka.
+
+---
+
+## Prompty na żywo — sekwencja Block 2
+
+Odpalane po kolei w sesji Claude otwartej w tym repo (Claude ma kontekst z README + plików). Każdy wywołuje konkretny moment lekcji.
+
+### 1. Wprowadzenie firmy (start Block 2)
+
+```
+Opisz, co robi firma Shipped i wyjaśnij każdą jej funkcjonalność tak, żeby
+zrozumiała osoba, która nigdy nie widziała produktu. Każdą funkcjonalność
+opisz pełnym zdaniem, prostym językiem — bez żargonu, bez jednowyrazowych
+skrótów. Nie oceniaj funkcjonalności (co działa, co nie) — tylko wyjaśnij,
+co robią.
+```
+
+**Czyta:** `company.md` (pozycjonowanie) + `portfolio.md` (9 funkcjonalności).
+**Wywołuje:** zrozumiały dla wszystkich opis Shipped + pełne (nie skrótowe) opisy funkcjonalności.
+**Dlaczego "pełnym zdaniem, bez skrótów":** bez tego Claude robi tabelę jednolinijkowych haseł, jasnych tylko dla kogoś, kto już zna produkt.
+**Dlaczego "nie oceniaj":** żeby nie zdradził, która funkcjonalność jest słaba (np. Slack) — to ma wyjść dopiero w diagnozie, nie przy wprowadzeniu firmy.
