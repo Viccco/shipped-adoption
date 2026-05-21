@@ -10,7 +10,7 @@ Integruje się z PostHog, Mixpanel, Amplitude, Heap, Segment oraz hurtowniami da
 
 - Kiedy spec'ujesz funkcjonalność, wybierasz jedną metryę, którą ma ruszyć (np. "konwersja z trial do paid", "weekly active teams"). Jedno pole, nie cała ankieta.
 - Po wypuszczeniu AI samo dobiera kogo śledzić i grupę kontrolną, po 14 dniach generuje raport.
-- Wszystko dostępne przez MCP server — Claude, Cursor i agenty pytają o status celów i które funkcjonalności działają, bez otwierania UI Shipped.
+- Wszystko dostępne przez **MCP server** (Model Context Protocol — standard, którym asystenci AI jak Claude czy Cursor łączą się z narzędziami i czytają z nich dane) — Claude, Cursor i agenty pytają o status celów i które funkcjonalności działają, bez otwierania UI Shipped.
 
 ## Segment
 
@@ -22,7 +22,7 @@ Integruje się z PostHog, Mixpanel, Amplitude, Heap, Segment oraz hurtowniami da
 
 ## Skala (stan na Q1 2026)
 
-Shipped mierzy cycle outcome (Retain) na poziomie weekly active users — bo retention to fenomen indywidualnych userów. Team-level metryki (weekly active teams, paying teams) są agregacjami user-level retention, śledzonymi dla raportowania zarządowi i sales motion. Wszystkie analizy adopcji w warsztacie są user-level.
+**Cycle outcome** to jedna metryka, którą zespół zobowiązuje się ruszyć w danym kwartale — tu jest nią **Retain**, czyli retencja: utrzymanie userów aktywnych w produkcie. Shipped mierzy ją jako **weekly active users** (ilu unikalnych userów było aktywnych w danym tygodniu) — bo retention to fenomen indywidualnych userów. Team-level metryki (weekly active teams, paying teams) są agregacjami user-level retention, śledzonymi dla raportowania zarządowi i sales motion. Wszystkie analizy adopcji w warsztacie są user-level.
 
 | Metryka | Wartość |
 |---|---|

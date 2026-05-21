@@ -2,13 +2,15 @@
 
 ## Funkcjonalność
 
-Outcome Roadmap (patrz portfolio): widok roadmapy zorganizowany po celach, nie po funkcjonalnościach. Dla każdego celu widzisz zaplanowaną pracę, termin realizacji i poziom pewności, że ruszy metryę.
+Outcome Roadmap (patrz portfolio): widok roadmapy zorganizowany po celach, nie po funkcjonalnościach. Dla każdego celu widzisz zaplanowaną pracę, termin realizacji i poziom pewności (**confidence band**), że ruszy metryę.
+
+Confidence band to oznaczenie pewności na danym celu — pokazuje, jak bardzo zespół wierzy, że praca zaplanowana pod ten cel faktycznie ruszy jego metrykę (np. high / medium / low). Pojawia się dopiero, gdy cel ma podpiętą metrykę i zlinkowane taski — bez tego nie ma czego oceniać.
 
 ## Kontekst
 
 Zespół Shipped wypuścił Outcome Roadmap 4 miesiące temu, w Q4 2025. Założenie: PM-owie tracą wątek z celów strategicznych przy planowaniu kwartału. Klasyczne roadmapy (Linear/Jira) pokazują features w czasie, ale nie odpowiadają na "czy to co planujemy faktycznie pociągnie outcome'y." Outcome Roadmap miała być narzędziem do kwartalnego planningu i bieżącej priorytetyzacji.
 
-Outcome który miał ruszyć: **weekly active users** (cycle outcome Shipped na Q1 2026 = Retain) — założenie zespołu było takie, że PM-owie, którzy znajdą wartość w planningu z Outcome Roadmap, będą wracać częściej, bo to ich kotwiczy w produkcie poza wąskim "ship + raport" loop.
+Outcome który miał ruszyć: **weekly active users** (cycle outcome Shipped na Q1 2026 = Retain, czyli metryka, którą zespół zobowiązał się ruszyć w tym kwartale — retencja, mierzona jako ilu userów jest aktywnych w danym tygodniu) — założenie zespołu było takie, że PM-owie, którzy znajdą wartość w planningu z Outcome Roadmap, będą wracać częściej, bo to ich kotwiczy w produkcie poza wąskim "ship + raport" loop.
 
 ## Funnel (ostatnie 90 dni, ~5,170 paying users)
 

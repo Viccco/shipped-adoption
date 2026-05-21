@@ -16,7 +16,7 @@ Widok one-page wszystkich funkcjonalności Shipped z baseline'em firmy. Punkt st
 
 ## Per feature — high-level scan
 
-Cycle outcome = **Retain** (weekly active users). Dwie rzeczy per funkcjonalność: **lejek adopcji** (gdzie userzy odpadają) i **sygnał wartości** (czy Regular userzy mają lepszą retencję niż cały aktywny base 50%).
+Cycle outcome = **Retain** — metryka, którą Shipped zobowiązał się ruszyć w tym kwartale: retencja, mierzona jako **weekly active users** (ilu userów jest aktywnych w danym tygodniu). Dwie rzeczy per funkcjonalność: **lejek adopcji** (gdzie userzy odpadają) i **sygnał wartości** (czy Regular userzy mają lepszą retencję niż cały aktywny base 50%).
 
 | Feature | Lejek: zna → użył → intensywnie | Retencja Regular userów vs base (50%) | Notatka |
 |---|---|---|---|
@@ -46,7 +46,7 @@ Duży spadek "zna → użył" = problem z wejściem (discoverability). Duży spa
 
 **Retencja Regular userów vs base** — sygnał wartości:
 - Bierzemy Regular userów (używają funkcjonalności regularnie) i sprawdzamy ich retencję (weekly active) vs **cały aktywny user base (50%)**.
-- Dodatnia różnica = sygnał, że intensywne używanie wiąże się z lepszą retencją. **To korelacja, nie dowód** (Regular userzy mogli być inni od początku). Dowód dałby aggressive test.
+- Dodatnia różnica = sygnał, że intensywne używanie wiąże się z lepszą retencją. **To korelacja, nie dowód** (Regular userzy mogli być inni od początku). Dowód dałby aggressive test — celowo odważny eksperyment (np. wymuszenie zmiany na części userów), który szybko pokazuje, czy efekt jest realny.
 - Slack +2pp = sygnał prawie zerowy. AI Daily Brief +25pp = mocny sygnał, ale w wąskiej grupie. MCP −19pp = paradoks (mierzone w UI, a oni żyją w Claude).
 
 ## Co prowadzący ma w zanadrzu (data slices)

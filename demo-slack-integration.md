@@ -4,13 +4,13 @@ To jest funkcjonalność, którą Wiktor prowadzi na żywo w Block 2 (nie dla uc
 
 ## Funkcjonalność
 
-Slack Integration (patrz portfolio): jednostronne (push-only) powiadomienia do Slacka — liczby po release, alerty gdy metryka spadła, zdarzenia jak dopisany task. Brak two-way: nie zaakceptujesz taska ani nie otworzysz raportu z poziomu Slacka.
+Slack Integration (patrz portfolio): trzyma zespół na bieżąco z tym, co dzieje się z jego celami — bez wchodzenia do Shipped. Prosto na Slacka trafia info, że raport po wypuszczeniu funkcjonalności jest gotowy, że metryka spadła poniżej progu, albo że ktoś przypisał nowy task pod cel. Każdy goal można kierować do osobnego kanału, żeby właściwy zespół widział właściwe alerty.
 
 ## Kontekst
 
 Slack Integration to jedna ze starszych funkcjonalności Shipped — powstała, zanim był MCP Server. Założenie: jeśli user dostaje info tam, gdzie pracuje (na Slacku), nie musi pamiętać o wchodzeniu do Shipped, więc wraca częściej i zostaje aktywny.
 
-Outcome który miała ruszyć: **weekly active users** (cycle outcome Retain). Hipoteza zespołu: powiadomienia = re-engagement = wyższy weekly active rate.
+Outcome który miała ruszyć: **weekly active users** (cycle outcome Retain — metryka, którą zespół zobowiązał się ruszyć w tym kwartale: retencja, czyli ilu userów jest aktywnych w danym tygodniu). Hipoteza zespołu: powiadomienia = re-engagement = wyższy weekly active rate.
 
 ## Funnel (ostatnie 90 dni, ~5,170 paying users)
 
@@ -26,7 +26,7 @@ Pierwsze trzy kroki wysokie — konfiguracja i odbiór działają. Dramatyczny s
 
 ## Cohort/Outcome
 
-Retencja (weekly active rate) wg intensywności użycia, ostatnie 90 dni:
+Retencja wg intensywności użycia, ostatnie 90 dni. Dzielimy userów na grupy (cohorty) wg tego, jak intensywnie korzystają z funkcjonalności, i porównujemy ich retencję (weekly active rate — % userów aktywnych w danym tygodniu):
 
 | Segment | Liczba paying users | Retencja (weekly active) |
 |---|---|---|
@@ -58,9 +58,9 @@ Retencja (weekly active rate) wg intensywności użycia, ostatnie 90 dni:
 
 1. **Discoverability (adopcja)** — NIE problem. 88% zna, 78% używa, 71% dostaje regularnie. Adopcja wysoka.
 2. **Rola** — push z powrotem do produktu, outcome = retention. Skoro 78% używa, a ma napędzać retention — warto sprawdzić, czy faktycznie napędza.
-3. **Value** — TO problem. +2pp nawet u aktywnych. Push-only, pasywne. Linear pokazuje, że two-way (actionable) działa — to sufit naszej implementacji, nie funkcjonalności.
+3. **Value** — TO problem. +2pp nawet u aktywnych. Push-only (powiadomienia idą tylko w jedną stronę — dostajesz info, ale nie możesz nic z nim zrobić), pasywne. Linear pokazuje, że two-way (możesz działać prosto ze Slacka, np. zaakceptować task) działa — to sufit naszej implementacji, nie funkcjonalności.
 4. **Decyzja** — fix (pogłębić do actionable), nie kill.
-5. **Hipoteza** — actionable Slack: akceptuj/odrzuć task, raport inline w wątku, zapytaj o outcome bez wchodzenia do Shipped. Aggressive test: two-way dla części teamów, mierzymy czy retencja Regular userów rośnie powyżej +2pp.
+5. **Hipoteza** — actionable Slack: akceptuj/odrzuć task, raport inline w wątku, zapytaj o outcome bez wchodzenia do Shipped. Aggressive test (celowo odważny eksperyment, który szybko pokazuje sufit): two-way dla części teamów, mierzymy czy retencja Regular userów rośnie powyżej +2pp.
 
 ---
 

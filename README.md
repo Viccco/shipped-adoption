@@ -2,6 +2,12 @@
 
 To są materiały do **warsztatu o adopcji funkcjonalności**. Ten folder zawiera fikcyjną firmę **Shipped**, na której uczestnicy ćwiczą flow diagnozy adopcji.
 
+## Jak zacząć
+
+Otwórz Claude Code w tym folderze i napisz `zaczynamy` (albo `od czego zacząć?`). Claude przywita cię i poprowadzi krok po kroku. Nie musisz znać nazw plików — pytaj zwykłym językiem.
+
+Masz przypisany case? Napisz `start case A` (albo `B` / `C`) — Claude wejdzie z tobą w tę funkcjonalność i poprowadzi przez flow.
+
 ## Czym jest Shipped
 
 Fikcyjne narzędzie do zarządzania produktem i projektami — jak Linear czy Jira — z jedną różnicą: nie kończy się na "Done." Po wypuszczeniu funkcjonalności sprawdza, czy faktycznie zmieniła metrykę, którą miała zmienić. Integruje się z PostHog/Mixpanel/Amplitude i hurtowniami danych. Pełny kontekst: `company.md`.

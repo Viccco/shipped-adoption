@@ -4,7 +4,7 @@ Dwa zestawy danych pod charty: adoption rate over time (trend tygodniowy) i rete
 
 ## 1. Adoption rate over time (WAU % per funkcjonalność)
 
-WAU % = jaki % MAU był aktywny w danej funkcjonalności w danym tygodniu. Ostatnie 5 tygodni (świeży snapshot). Pod wykres liniowy w stylu PostHog ("Adoption rates").
+WAU % = jaki % MAU (monthly active users — userów aktywnych w danym miesiącu) był aktywny w danej funkcjonalności w danym tygodniu (WAU = weekly active users, aktywni w danym tygodniu). Ostatnie 5 tygodni (świeży snapshot). Pod wykres liniowy w stylu PostHog ("Adoption rates").
 
 | Funkcjonalność | Apr 20 | Apr 27 | May 4 | May 11 | May 18 |
 | --- | --- | --- | --- | --- | --- |
@@ -22,7 +22,7 @@ WAU % = jaki % MAU był aktywny w danej funkcjonalności w danym tygodniu. Ostat
 
 ## 2. Retencja per segment (weekly active rate)
 
-Dla każdej funkcjonalności: weekly active rate (w całym Shipped) trzech segmentów — Non-user (nie używa), Casual user (używa średnio), Regular user (używa regularnie). Baseline = 50%. Pod wykres retention-by-segment (bar lub curve).
+Dla każdej funkcjonalności: weekly active rate (% userów aktywnych w danym tygodniu, liczony w całym Shipped) trzech segmentów — Non-user (nie używa), Casual user (używa średnio), Regular user (używa regularnie). Baseline = 50%. Pod wykres retention-by-segment (bar lub curve).
 
 Punkt odniesienia: **cały aktywny user base = 50%**. Sygnał wartości = retencja Regular userów − 50%.
 
