@@ -2,9 +2,11 @@
 
 ## Pozycjonowanie
 
-**Shipped to narzędzie do zarządzania produktem i projektami — jak Linear czy Jira — z jedną różnicą: nie kończy się na „Done".** Po każdym wypuszczeniu funkcjonalności automatycznie sprawdza, czy faktycznie zmieniła metrykę, którą miała zmienić (retencję, konwersję, aktywność), i raportuje to bez analityka, bez SQL-a, bez ręcznego budowania dashboardów.
+Shipped to miejsce, w którym zarządzasz pracą produktową. Taski, projekty, release'y. Jak Linear czy Jira. Co jest inne: każdy task musi być podpięty do prawdziwej metryki, którą chcesz ruszyć. Ta metryka pochodzi z twojego narzędzia analitycznego (PostHog, Mixpanel, Amplitude, hurtownia danych). Po wypuszczeniu taska Shipped sam pobiera dane i mówi, czy metryka faktycznie się ruszyła. Bez analityka, bez SQL-a, bez ręcznie budowanych dashboardów.
 
-Integruje się z PostHog, Mixpanel, Amplitude, Heap, Segment oraz hurtowniami danych (Snowflake, BigQuery, Redshift, Databricks).
+To zmienia sposób, w jaki planujesz. Zamiast organizować pracę wokół funkcjonalności, organizujesz ją wokół celów, które chcesz ruszyć.
+
+Integracje: PostHog, Mixpanel, Amplitude, Heap, Segment oraz hurtownie danych (Snowflake, BigQuery, Redshift, Databricks).
 
 ## Mechanika
 
@@ -22,7 +24,7 @@ Integruje się z PostHog, Mixpanel, Amplitude, Heap, Segment oraz hurtowniami da
 
 ## Skala (stan na Q1 2026)
 
-**Cycle outcome** to jedna metryka, którą zespół zobowiązuje się ruszyć w danym kwartale — tu jest nią **Retain**, czyli retencja: utrzymanie userów aktywnych w produkcie. Shipped mierzy ją jako **weekly active users** (ilu unikalnych userów było aktywnych w danym tygodniu) — bo retention to fenomen indywidualnych userów. Team-level metryki (weekly active teams, paying teams) są agregacjami user-level retention, śledzonymi dla raportowania zarządowi i sales motion. Wszystkie analizy adopcji w warsztacie są user-level.
+**Cel kwartału** to jedna metryka, którą zespół zobowiązuje się ruszyć. Tutaj to **Retain**: utrzymanie userów aktywnych w produkcie. Shipped mierzy go jako **weekly active users** (ilu unikalnych userów było aktywnych w danym tygodniu), bo retention to fenomen indywidualnych userów. Team-level metryki (weekly active teams, paying teams) są agregacjami user-level retention, śledzonymi dla raportowania zarządowi i sales motion. Wszystkie analizy adopcji w warsztacie są user-level.
 
 | Metryka | Wartość |
 |---|---|

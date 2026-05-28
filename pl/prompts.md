@@ -56,7 +56,7 @@ Wygeneruj 3 hipotezy poprawy. Każda hipoteza MUSI mieć:
 - **Data-backed perspektywa**: które konkretne dane z diagnozy uzasadniają
   ten ruch.
 - **Strategiczna perspektywa**: dlaczego warto to zrobić teraz (związek z
-  cycle outcome = Retain / weekly active users, albo z pozycją vs konkurencja).
+  celem kwartału Retain / weekly active users, albo z pozycją vs konkurencja).
 - **Aggressive test**: najmocniejsza, najbardziej skrajna wersja tego ruchu,
   którą można odpalić, żeby szybko potwierdzić sufit (Airbnb-popup style).
 

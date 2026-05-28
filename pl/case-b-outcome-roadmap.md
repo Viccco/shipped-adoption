@@ -10,7 +10,7 @@ Confidence band to oznaczenie pewności na danym celu — pokazuje, jak bardzo z
 
 Zespół Shipped wypuścił Outcome Roadmap 4 miesiące temu, w Q4 2025. Założenie: PM-owie tracą wątek z celów strategicznych przy planowaniu kwartału. Klasyczne roadmapy (Linear/Jira) pokazują features w czasie, ale nie odpowiadają na "czy to co planujemy faktycznie pociągnie outcome'y." Outcome Roadmap miała być narzędziem do kwartalnego planningu i bieżącej priorytetyzacji.
 
-Outcome który miał ruszyć: **weekly active users** (cycle outcome Shipped na Q1 2026 = Retain, czyli metryka, którą zespół zobowiązał się ruszyć w tym kwartale — retencja, mierzona jako ilu userów jest aktywnych w danym tygodniu) — założenie zespołu było takie, że PM-owie, którzy znajdą wartość w planningu z Outcome Roadmap, będą wracać częściej, bo to ich kotwiczy w produkcie poza wąskim "ship + raport" loop.
+Metryka, którą miał ruszyć: **weekly active users** (cel kwartału Shipped na Q1 2026 to Retain, czyli retencja mierzona jako ilu userów jest aktywnych w danym tygodniu). Założenie zespołu było takie, że PM-owie, którzy znajdą wartość w planningu z Outcome Roadmap, będą wracać częściej, bo to ich kotwiczy w produkcie poza wąskim "ship + raport" loop.
 
 ## Funnel (ostatnie 90 dni, ~5,170 paying users)
 

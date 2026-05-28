@@ -10,7 +10,7 @@ Slack Integration (patrz portfolio): trzyma zespół na bieżąco z tym, co dzie
 
 Slack Integration to jedna ze starszych funkcjonalności Shipped — powstała, zanim był MCP Server. Założenie: jeśli user dostaje info tam, gdzie pracuje (na Slacku), nie musi pamiętać o wchodzeniu do Shipped, więc wraca częściej i zostaje aktywny.
 
-Outcome który miała ruszyć: **weekly active users** (cycle outcome Retain — metryka, którą zespół zobowiązał się ruszyć w tym kwartale: retencja, czyli ilu userów jest aktywnych w danym tygodniu). Hipoteza zespołu: powiadomienia = re-engagement = wyższy weekly active rate.
+Metryka, którą miała ruszyć: **weekly active users** (to cel kwartału Shipped, Retain: retencja, czyli ilu userów jest aktywnych w danym tygodniu). Hipoteza zespołu: powiadomienia = re-engagement = wyższy weekly active rate.
 
 ## Funnel (ostatnie 90 dni, ~5,170 paying users)
 

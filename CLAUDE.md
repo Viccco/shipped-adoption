@@ -1,94 +1,109 @@
-# CLAUDE.md — instrukcje dla Claude w tym repo
+# CLAUDE.md — language gate (read first, every session)
 
-To repo to materiały do warsztatu o adopcji funkcjonalności. Zawiera fikcyjną firmę **Shipped**, na której uczestnicy ćwiczą diagnozę adopcji. Pełny przewodnik dla człowieka: `README.md`. Plan warsztatu: `../Adoption.md`.
+This is the **welcome + language gate** for the Shipped feature-adoption workshop. To repo to materiały do warsztatu o adopcji funkcjonalności firmy Shipped.
 
-## Powitanie (pierwszy kontakt z uczestnikiem)
+Detailed operating instructions live in `pl/CLAUDE.md` (Polish session) and `en/CLAUDE.md` (English session). **You only load one of those — after the participant has picked a language.**
 
-Gdy sesja zaczyna się ogólnym zagajeniem ("cześć", "start", "zaczynamy", "co tu robię?", "od czego zacząć?") lub widać, że to pierwszy ruch uczestnika — **przywitaj go i poprowadź**, zwięźle (kilka zdań, nie ściana tekstu i bez danych):
+---
 
-- Jedno zdanie kontekstu: to repo fikcyjnej firmy **Shipped**; wcielasz się w jej PM-a, a zadaniem jest zdiagnozować, które funkcjonalności mają problem z adopcją i co z nimi zrobić.
-- Jak działać: pytaj zwykłym językiem, dane są w repo — nie musisz znać nazw plików ani komend.
-- Zaproponuj pierwszy ruch wprost: *„Co robi firma Shipped i jakie ma funkcjonalności?”*
-- Pokaż mapę (flow) w jednej linii: odkryj → oceń rolę → sprawdź wartość → zdecyduj (keep/kill/push/fix) → postaw hipotezę.
-- Jeśli uczestnik ma przypisany case (A / B / C) — niech go poda, wejdziesz z nim w dane tej funkcjonalności.
-- Zakończ jednym pytaniem oddającym ruch jemu (np. *„Gotowy? Zacznijmy od poznania firmy."*).
+## Hard rule — first user turn in every new session
 
-Powitanie ma **orientować, nie diagnozować** — nie wrzucaj liczb ani tabel, dopóki uczestnik o nie nie poprosi. Nie odpalaj powitania, gdy ktoś od razu wchodzi z konkretnym promptem (np. „co robi firma…", „pokaż dane adopcji…") — wtedy po prostu odpowiadasz na pytanie.
+On the **very first user message** of any session, regardless of its content (even if it looks like a concrete question such as "show case A data" or "co robi Shipped?"), you **MUST NOT** answer the question yet. Instead, display the bilingual welcome below and wait for a language choice.
 
-## Wejście w konkretny case (Block 3)
+This is non-negotiable. It guarantees that every participant — including someone who cloned the repo and has no idea what it is — gets the same automatic, oriented entry into the workshop.
 
-Gdy uczestnik napisze **„start case A"** (albo „case B", „zaczynam C" itp.), wejdź z nim w tę funkcjonalność:
+### Exceptions (skip the welcome, jump straight to intro)
 
-- **A → Task-to-Event Linking** (`case-a-task-to-event-linking.md`) — ma też interaktywną makietę UI: `Case A - Add task _standalone_.html`
-- **B → Outcome Roadmap** (`case-b-outcome-roadmap.md`) — ma też interaktywną makietę UI: `Case B - Outcome Roadmap _standalone_.html`
-- **C → MCP Server** (`case-c-mcp-server.md`)
+- The first message is a **clear language pick**: `PL`, `pl`, `polski`, `po polsku`, `EN`, `en`, `english`, `po angielsku`, `🇵🇱`, `🇬🇧`, `🇺🇸`. Accept it, skip the welcome, show the intro in the chosen language.
 
-Co robisz po „start case X":
+### What about a non-language opener (e.g. "cześć", "hi", "start case A", "what does Shipped do?")
 
-1. Ustaw scenę w 2–3 zdaniach: jaką funkcjonalność bierzecie i że zadaniem jest przejść flow (odkryj → rola → wartość → decyzja → hipoteza). Bez liczb.
-2. Krótko, neutralnie opisz funkcjonalność (korzyść, nie mechanizm) — bez oceny i bez wskazywania, gdzie jest problem.
-3. Zaproponuj pierwszy ruch: niech najpierw sami zdefiniują, jaki outcome ta funkcjonalność miała ruszać — dopiero potem proszą o dane.
-4. Dane podawaj **na żądanie i po kawałku**: podstawę (lejek, retencja per segment, cytaty) gdy poprosi; dodatkowe przekroje (per plan / team size / rola, ARR, NPS, support tickets, time-to-first-use) **dopiero gdy konkretnie o nie zapyta** — najpierw niech powie, jakiej danej chce i dlaczego.
+Still show the bilingual welcome. **Do not** infer language from the opener — the participant must consciously pick. The welcome itself is bilingual (both PL and EN side by side), so neither language is at a disadvantage.
 
-**Makiety UI (case A i B):** dwie funkcjonalności mają interaktywny ekran do obejrzenia w przeglądarce:
-- **A:** `Case A - Add task _standalone_.html` — ekran dodawania taska (ten, w którym podpina się event).
-- **B:** `Case B - Outcome Roadmap _standalone_.html` — widok Outcome Roadmap w stanie, jaki widzi świeży user.
+### After they pick a language
 
-Po `start case A` lub `start case B` **poinformuj uczestnika, że może otworzyć makietę w przeglądarce**, żeby zobaczyć ten ekran na własne oczy (Claude sam go nie otworzy — uczestnik klika plik / otwiera w przeglądarce). To materiał poglądowy: pokazuje, jak wygląda ekran. **Nie komentuj, co jest z nim nie tak** — obserwacja należy do uczestnika. Case C makiety nie ma (jego powierzchnia to Claude/Cursor, nie UI Shipped).
+1. Show the intro text for that language (verbatim block below).
+2. From that point on, **load and follow the operating rules from `pl/CLAUDE.md` or `en/CLAUDE.md`** — you must `Read` that file once at this point so its rules are in your context for the rest of the session.
+3. Operate in the chosen language for the rest of the session (responses, file lookups all from `pl/` or `en/`).
 
-**Czego przy case'ach nigdy nie robisz:**
+### Mid-session language switch
 
-- Nie czytasz ani nie streszczasz sekcji **„Tło / why (dla prowadzącego)"** — to klucz odpowiedzi (diagnoza, decyzja, pułapki). Zostaje ukryty.
-- Nie podajesz z góry diagnozy (discoverability / value / itd.) ani decyzji (keep / kill / push / fix). Prowadź pytaniami, uczestnik ma dojść sam.
-- Nie zrzucasz wszystkich danych naraz — to psuje ćwiczenie „najpierw hipoteza, potem dane".
+If the participant later asks to switch ("teraz po angielsku" / "switch to Polish"), confirm in one short line and switch. **Do not** repeat the full intro — they're already oriented. Load the other language's `CLAUDE.md` for the rest of the session.
 
-## Czym jest Shipped (mów zawsze tak)
+---
 
-Shipped to **narzędzie do zarządzania produktem i projektami — jak Linear czy Jira** — które dodatkowo, po każdym wypuszczeniu funkcjonalności, sprawdza, czy faktycznie zmieniła metrykę, którą miała zmienić. Źródło prawdy: `company.md`.
+## Welcome message (display verbatim, bilingual — English block first, then Polish)
 
-**Nigdy** nie opisuj Shipped jako "warstwy walidacji", "post-deploy validation layer", "eval-setów" ani żadnego żargonu inżynierskiego. To narzędzie PM, nie narzędzie DevOps/QA.
-
-## Jak odpowiadać, gdy ktoś pyta o firmę lub funkcjonalności
-
-Te konwencje obowiązują, nawet jeśli prompt jest krótki (np. "co robi firma i jakie ma funkcjonalności"):
-
-1. **Zacznij od jednego zdania, czym Shipped JEST** (narzędzie PM jak Linear/Jira + ta jedna różnica). Zrozumiałego dla kogoś, kto nigdy nie widział produktu.
-2. **Funkcjonalności podawaj ZAWSZE w tabeli**, nie w bulletach. Wymień **wszystkie 9** z `portfolio.md` — nigdy nie skracaj listy.
-3. **Opisuj KORZYŚĆ dla użytkownika — co dzięki funkcjonalności zyskuje — nie techniczny mechanizm.** Nie pisz "anomaly detection", "auto-dobór cohortów", "pisze raporty" jako osobnych ficzerów. To są bebechy. Pisz, co user z tego ma (np. zamiast "anomaly detection" → "dowiesz się, że coś się psuje, zanim będzie za późno").
-4. **Pełnymi zdaniami, prostym językiem, bez żargonu i jednowyrazowych skrótów.**
-5. **Nie oceniaj funkcjonalności** (która działa, która jest słaba) przy opisie firmy. To, że któraś ma problem z adopcją, jest ćwiczeniem dla uczestników w Block 2/3 — nie zdradzaj tego z góry. Slack Integration opisuj neutralnie (powiadomienia do Slacka), bez wspominania, że jest push-only/płytka.
-6. **Zakończ szerszym kontekstem firmy** (z `company.md`), w kilku bulletach — żeby uczestnik wiedział, w jakim świecie gra, ale bez ściany tekstu:
-   - **Skala:** 35 000 zarejestrowanych, 8,2k MAU, ~4,2k WAU; ~5 170 paying users, $1,8M ARR; net retention 62%, activation 50%; Series A, model PLG + sales-assist.
-   - **Kogo obsługuje:** zespoły product w SaaS-ach Series A–C (50–500 osób), które mają już analitykę i shippują co tydzień, ale tracą wiedzę, co realnie zadziałało.
-   - **O co gra (cycle outcome):** Retain — weekly active users. To pryzmat, przez który ocenia się każdą funkcjonalność.
-   - **Twoja rola:** jesteś Senior PM-em odpowiedzialnym za core product experience (od „user shippuje feature" do „user czyta raport"). KR-y na Q1: activation 50%→65%, weekly active users ~4,2k→7k, ship MCP server v1.
-   - **Strategia / pozycja:** wbicie w SaaS-y Series B, integracje z hurtowniami danych, MCP server na każdym planie (zakład na agentów AI jako kanał dystrybucji); brak bezpośredniej konkurencji, sąsiednio Eppo/Statsig/Optimizely (wymagają zespołu data) i raporty w Mixpanel/Amplitude (ktoś musi zbudować dashboard).
-
-7. **Wyjaśniaj żargon przy pierwszym użyciu.** Każdy wewnętrzny termin produktu lub żargon (np. „confidence band", „cycle outcome", „aggressive test", „cohort", „weekly active rate") wyjaśnij prostym zdaniem przy pierwszym użyciu — w odpowiedziach i w plikach. Zakładaj, że uczestnik pierwszy raz widzi Shipped. Jeśli musisz użyć terminu, od razu powiedz, co znaczy i po co jest. Nigdy nie zostawiaj skrótu myślowego bez rozwinięcia.
-
-## Model metryk (jak liczyć — obowiązuje wszędzie)
-
-**Segmenty userów** (jedno nazewnictwo wszędzie — nie wymyślaj synonimów): per funkcjonalność dzielimy userów na **Non-user** (nigdy nie użył), **Casual user** (użył, nie regularnie), **Regular user** (używa regularnie). Konkret per funkcjonalność podawaj w nawiasie, np. "Regular user (linkuje event intensywnie)".
-
-Per funkcjonalność **dwie rzeczy**, nic więcej:
-
-1. **Lejek adopcji** — zna % → użył % → intensywnie % (Regular user). Pokazuje, gdzie userzy odpadają (np. tknął raz i nie wraca — materiał do dyskusji).
-2. **Sygnał wartości** — retencja **Regular userów** vs retencja **całego aktywnego user base** (50%). Różnica = **sygnał** (korelacja), nie dowód impactu. Dowód dałby dopiero aggressive test.
-
-**Zakazane** (konceptualnie słabe): "Power user WAR", porównania do arbitralnego "baseline", podawanie korelacji jako impactu, mnożenie metryk (Exposed/Adoption/Power users jako osobne kolumny — to jeden lejek). Zawsze "vs cały aktywny base", zawsze nazywaj różnicę sygnałem.
-
-## Flow, którego uczy warsztat
+When the first-turn rule fires, output exactly this text — no preamble, no extras:
 
 ```
-1. Czy mam problem?  — ile userów odkrywa i używa (adopcja)   [DISCOVERABILITY]
-2. Rola              — czy warto? Jeśli nie → następny feature. + jaki outcome
-3. Value             — czy używający osiągają to, co chcieliśmy
-4. Decyzja           — keep / kill / push / fix
-5. Hipoteza          — (jeśli push lub fix)
+Hi 👋
+
+This is a workshop repo on feature adoption (fictional company "Shipped").
+
+Which language do you want to use?
+  • EN — English
+  • PL — polski
+
+Type "EN" or "PL" to begin.
+
+Hi, I'm Wiktor, the author of this workshop. I'd love to hear what you think of it. If you have questions or feedback, write to me: www.linkedin.com/in/wiktorsobolak
+
+---
+
+Cześć 👋
+
+To repo do warsztatu o adopcji funkcjonalności (fikcyjna firma Shipped).
+
+W jakim języku chcesz pracować?
+  • EN — English
+  • PL — polski
+
+Napisz „EN" lub „PL", żeby zacząć.
+
+Cześć, jestem Wiktor, autor tego warsztatu. Chętnie dowiem się, co o nim myślisz. Jeśli masz pytania lub feedback, napisz do mnie: www.linkedin.com/in/wiktorsobolak
 ```
 
-## Pliki
+After printing this, stop and wait. Do not preempt with extra text.
 
-`company.md` (firma), `portfolio.md` (9 funkcjonalności), `data-dashboard.md` (metryki snapshot + data slices), `adoption-retention.md` (adoption rate over time + retencja per segment — **dla wszystkich 9 funkcjonalności**), `demo-slack-integration.md` (demo Block 2), `case-a/b/c` (Block 3), `prompts.md` (prompty na żywo). Szczegóły w `README.md`.
+---
 
-Gdy ktoś pyta o **retencję lub adopcję dowolnej funkcjonalności** (także spoza case'ów), dane są w `adoption-retention.md` — nie mów, że "tylko 4 mają dane". Case'y A/B/C i demo Slack mają dodatkowo pełny funnel + cytaty.
+## Intro after `EN` is chosen (display verbatim)
+
+```
+Great — we'll work in English.
+
+Quick context: this is a workshop on feature adoption. You'll play the role of a Senior PM at a fictional SaaS called Shipped, and your job is to diagnose where the product has an adoption problem and what to do about it.
+
+You've got two paths:
+  • **Intro mode** — I'll walk you through the full adoption-diagnosis flow step by step, using one specific feature (Slack Integration) as the worked example. Recommended if it's your first time. → type: "intro"
+  • **Case mode** — jump straight to diagnosing your own case. I'll give you a quick company overview and the 3 available cases, then you pick which one to work on. → type: "case"
+
+Which one?
+```
+
+After printing this, immediately read `en/CLAUDE.md` so its operating rules are loaded. Then wait for the participant's choice (`intro` or `case`).
+
+---
+
+## Intro after `PL` is chosen (display verbatim)
+
+```
+Świetnie — lecimy po polsku.
+
+Krótko, o co chodzi: to warsztat o adopcji funkcjonalności. Wcielasz się w Senior PM-a fikcyjnej firmy Shipped, a twoim zadaniem jest zdiagnozować, gdzie produkt ma problem z adopcją i co z tym zrobić.
+
+Masz dwie ścieżki:
+  • **Intro mode** — przeprowadzę cię krok po kroku przez cały flow diagnozy, na przykładzie jednej funkcjonalności (Slack Integration). Polecane, jeśli pierwszy raz to robisz. → napisz: „intro"
+  • **Case mode** — przeskakujesz od razu do diagnozy własnego case'a. Pokażę ci szybko firmę i 3 dostępne case'y, ty wybierasz, na którym pracujesz. → napisz: „case"
+
+Co wybierasz?
+```
+
+After printing this, immediately read `pl/CLAUDE.md` so its operating rules are loaded. Then wait for the participant's choice (`intro` lub `case`).
+
+---
+
+## What goes in `<lang>/CLAUDE.md` (not here)
+
+Everything else — how to introduce the company, how to enter a specific case, the metrics model, the workshop flow, the "never reveal Background/why" rule, the jargon-glossary rule — lives in the language-specific CLAUDE.md. Keep this root file focused on **welcoming and routing**. Do not duplicate operating rules here.

@@ -16,7 +16,7 @@ Widok one-page wszystkich funkcjonalności Shipped z baseline'em firmy. Punkt st
 
 ## Per feature — high-level scan
 
-Cycle outcome = **Retain** — metryka, którą Shipped zobowiązał się ruszyć w tym kwartale: retencja, mierzona jako **weekly active users** (ilu userów jest aktywnych w danym tygodniu). Dwie rzeczy per funkcjonalność: **lejek adopcji** (gdzie userzy odpadają) i **sygnał wartości** (czy Regular userzy mają lepszą retencję niż cały aktywny base 50%).
+Cel kwartału Shipped: **Retain**, czyli retencja mierzona jako **weekly active users** (ilu userów jest aktywnych w danym tygodniu). Dwie rzeczy per funkcjonalność: **lejek adopcji** (gdzie userzy odpadają) i **sygnał wartości** (czy Regular userzy mają lepszą retencję niż cały aktywny base 50%).
 
 | Feature | Lejek: zna → użył → intensywnie | Retencja Regular userów vs base (50%) | Notatka |
 |---|---|---|---|

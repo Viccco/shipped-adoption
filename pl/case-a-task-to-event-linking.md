@@ -8,7 +8,7 @@ Task-to-Event Linking (patrz portfolio): przy spec'u taska wybierasz konkretne z
 
 Zespół Shipped wypuścił Task-to-Event Linking 6 miesięcy temu, w Q3 2025. Założenie było proste: jeśli userzy będą linkować eventy do tasków przy spec'u, Impact Detector dostanie precyzyjne sygnały i raporty po wypuszczeniu będą znacznie lepsze. Lepsze raporty = userzy widzą wartość Shipped szybciej = wracają częściej.
 
-Outcome który miał ruszyć: **weekly active teams** (cycle outcome Shipped na Q1 2026 = Retain — metryka, którą zespół zobowiązał się ruszyć w tym kwartale: retencja, czyli utrzymanie userów aktywnych w produkcie).
+Metryka, którą miał ruszyć: **weekly active teams** (cel kwartału Shipped na Q1 2026 to Retain, czyli retencja: utrzymanie userów aktywnych w produkcie).
 
 Przy spec'u taska pole "Linkuj event" znajduje się w sekcji "Advanced," którą user musi rozwinąć ręcznie. Pole otwiera **event picker** — listę, z której wybierasz konkretne zdarzenie (event) do podpięcia. Tooltip wyjaśnia o co chodzi, ale tylko przy hoverze.
 

@@ -8,7 +8,7 @@ MCP Server (patrz portfolio): Shipped wystawia interfejs (MCP — Model Context 
 
 Zespół Shipped wypuścił MCP Server 2 miesiące temu, w Q1 2026. Założenie: PM-owie i engineerzy żyją coraz więcej w Claude/Cursor (zamiast otwierać dziesiątek toolów), więc Shipped musi być dostępne tam, gdzie pracują. MCP Server jest **free na każdym planie** — to świadoma strategiczna inwestycja zespołu Shipped: zakład, że Claude i Cursor będą głównym kanałem, przez który PM-owie używają toolów w 2026, więc Shipped musi tam być, zanim konkurencja zauważy, że agent surface to nowy kanał dystrybucji.
 
-Outcome który miał ruszyć: **weekly active users** (cycle outcome Retain — metryka, którą zespół zobowiązał się ruszyć w tym kwartale: retencja, mierzona jako ilu userów jest aktywnych w danym tygodniu). Ale tu pojawia się paradoks: jeśli user zaczyna używać Shipped przez Claude, *przestaje* otwierać UI Shipped. Z perspektywy klasycznej metryki UI wygląda to jak spadek aktywności, mimo że realne zużycie produktu rośnie. Sukces MCP może wyglądać w danych jak porażka — to pierwszy sygnał, że trzeba nowej metryki.
+Metryka, którą miał ruszyć: **weekly active users** (cel kwartału Shipped to Retain, czyli retencja mierzona jako ilu userów jest aktywnych w danym tygodniu). Ale tu pojawia się paradoks: jeśli user zaczyna używać Shipped przez Claude, *przestaje* otwierać UI Shipped. Z perspektywy klasycznej metryki UI wygląda to jak spadek aktywności, mimo że realne zużycie produktu rośnie. Sukces MCP może wyglądać w danych jak porażka, i to jest pierwszy sygnał, że trzeba nowej metryki.
 
 ## Funnel (ostatnie 60 dni, bo feature młody, ~5,170 paying users)
 
